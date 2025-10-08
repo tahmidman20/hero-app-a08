@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useApps from "../hooks/useApps";
 import AppsCard from "../Components/AppsCard";
+import { Link } from "react-router";
 
 const Apps = () => {
   const { appsdata } = useApps();
