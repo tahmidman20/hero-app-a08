@@ -1,11 +1,15 @@
 import React from "react";
 import Banner from "./Banner";
-import { Link, useLoaderData } from "react-router";
+import { Link } from "react-router";
 import AppsCard from "../Components/AppsCard";
+import useApps from "../hooks/useApps";
 
 const Home = () => {
-  const apps = useLoaderData();
-  const featuredApps = apps.slice(0, 8);
+  // const apps = useLoaderData();
+  const { appsdata, loading, error } = useApps();
+  // console.log(appsdata);
+
+  const featuredApps = appsdata.slice(0, 8);
   // console.log(apps);
   return (
     <div>

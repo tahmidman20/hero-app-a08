@@ -2,7 +2,7 @@ import React from "react";
 
 const AppsCard = ({ app }) => {
   const { image, title, downloads, ratingAvg } = app;
-  console.log(app);
+  //   console.log(app);
   return (
     <div className="">
       <div className="p-5 bg-white rounded-md shadow-lg hover:scale-103 transition ease-in-out">
@@ -11,13 +11,13 @@ const AppsCard = ({ app }) => {
           {title}
         </h2>
         <div className="flex justify-between pt-4">
-          <div className="flex">
+          <div className="flex bg-gray-200 p-2 rounded-md">
             <img className="h-5" src="/public/icon-downloads.png" alt="" />
-            <p>{downloads}</p>
+            <p className="text-green-500">{downloads}</p>
           </div>
-          <div className="flex">
+          <div className="flex bg-orange-100 p-2 rounded-md">
             <img className="h-5" src="/public/icon-ratings.png" alt="" />
-            <p>{ratingAvg}</p>
+            <p className="text-orange-500">{ratingAvg}</p>
           </div>
         </div>
       </div>
