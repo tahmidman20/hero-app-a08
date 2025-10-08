@@ -20,6 +20,15 @@ const Installation = () => {
     }
   })();
 
+  const handleUninstall = (id) => {
+    const existingData = JSON.parse(localStorage.getItem("install"));
+
+    let updatedData = existingData.filter((p) => p.id !== id);
+    setInstallApp(updatedData);
+
+    localStorage.setItem("install", JSON.stringify(updatedData));
+  };
+
   return (
     <div>
       <div className="text-center items-center">
@@ -68,7 +77,12 @@ const Installation = () => {
               </div>
             </div>
             <div>
-              <button className="btn btn-primary">Uninstall</button>
+              <button
+                onClick={() => handleUninstall(p.id)}
+                className="btn btn-primary"
+              >
+                Uninstall
+              </button>
             </div>
           </div>
         ))}
