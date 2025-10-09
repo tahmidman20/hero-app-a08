@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installApp, setInstallApp] = useState([]);
@@ -21,6 +22,7 @@ const Installation = () => {
   })();
 
   const handleUninstall = (id) => {
+    toast("App uninstalled successfully!✔");
     const existingData = JSON.parse(localStorage.getItem("install"));
 
     let updatedData = existingData.filter((p) => p.id !== id);
@@ -52,11 +54,11 @@ const Installation = () => {
           </select>
         </label>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4 pb-5">
         {sortedItems.map((p) => (
           <div
             key={p.id}
-            className="flex bg-white mx-1 md:mx-5 justify-between items-center px-5 rounded-md shadow-xl mt-3"
+            className="flex flex-col sm:flex-row sm:items-center bg-white mx-1 md:mx-5 justify-between items-center px-5 rounded-md shadow-xl mt-3"
           >
             <div className="flex space-x-2">
               <div>

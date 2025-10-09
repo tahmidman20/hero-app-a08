@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
+
+import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import Cardload from "../Components/Cardload";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { appsdata, loading } = useApps();
+  const [installedApps, setInstalledApps] = useState([]);
+
+  useEffect(() => {
+    const existingData = JSON.parse(localStorage.getItem("install")) || [];
+    setInstalledApps(existingData);
+  }, []);
+  if (loading) return <Cardload></Cardload>;
 
   const appData = appsdata.find((p) => String(p.id) === id);
-  if (loading) return <p> Loading...</p>;
+  if (loading) return <Cardload></Cardload>;
   const {
     image,
     title,
@@ -17,23 +28,27 @@ const AppDetails = () => {
     companyName,
     size,
     description,
+    id: appID,
   } = appData || {};
 
   const handleInstall = () => {
-    alert("Add to list ???");
     const existingData = JSON.parse(localStorage.getItem("install"));
     let updatedData = [];
 
     if (existingData) {
       const isDuplicate = existingData.some((p) => p.id === appData.id);
-      if (isDuplicate) return alert(" Sorry this app already exist");
+      if (isDuplicate) return toast(" Sorry this app already exist");
       updatedData = [...existingData, appData];
     } else {
       updatedData.push(appData);
     }
 
     localStorage.setItem("install", JSON.stringify(updatedData));
+
+    setInstalledApps(updatedData);
+    toast("App installed successfully!✅");
   };
+  const isInstalled = installedApps.some((item) => item.id === appID);
 
   return (
     <div>
@@ -72,10 +87,11 @@ const AppDetails = () => {
           </div>
           <div className="mt-4 pb-5">
             <button
+              disabled={isInstalled}
               onClick={handleInstall}
-              className="bg-green-400 text-white px-5 py-2 rounded-md shadow-md font-semibold hover:bg-green-600 transition"
+              className="bg-green-600 text-white px-5 py-2 disabled:bg-green-400 rounded-md shadow-md font-semibold hover:bg-green-600 transition"
             >
-              Install Now ({size} MB)
+              {isInstalled ? "Installed" : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>
