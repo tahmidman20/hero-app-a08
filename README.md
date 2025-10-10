@@ -1,5 +1,27 @@
 # React + Vite
 
+## NOTICE
+
+# App Name ⬇
+
+Hero — Modern Task & Project Management Web App
+
+# Description ⬇
+
+Hero is a modern and interactive web application designed to help users manage their projects, tasks, and teams efficiently.
+It allows users to create, track, and analyze tasks through a clean and responsive interface.
+Real-time updates, toast notifications, and data visualization make the user experience smooth and engaging.
+
+# Technologies ⬇
+
+Frontend ➡ React.js (v19), JSX, Vite
+Styling ➡ Tailwind CSS
+Charts ➡ Recharts
+Routing ➡ React Router DOM
+Notifications ➡ React Toastify
+Hosting ➡ Netlify
+Version Control ➡ Git & GitHub
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

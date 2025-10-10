@@ -16,8 +16,15 @@ const Footer = () => {
       <div className="py-3 border-b-1 border-gray-300">
         <ul className="flex space-x-6 items-center text-center justify-center text-xl">
           <li className="font-semibold">Home</li>
+          <li className="font-semibold">About us</li>
           <li className="font-semibold">Apps</li>
           <li className="font-semibold">Installation</li>
+        </ul>
+        <ul className="flex space-x-6 items-center text-center justify-center text-xl mt-3 px-2">
+          <li className="font-semibold">Contact</li>
+          <li className="font-semibold">Help</li>
+          <li className="font-semibold">Terms of use</li>
+          <li className="font-semibold">Privacy policy</li>
         </ul>
         <div className="flex space-x-6 items-center text-center justify-center py-6">
           <span className="text-3xl">

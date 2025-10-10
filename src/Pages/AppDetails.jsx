@@ -64,7 +64,7 @@ const AppDetails = () => {
 
   if (!appID) {
     return (
-      <div>
+      <div className="flex justify-center">
         <img src="https://i.ibb.co.com/dYjZ1vk/App-Error.png" alt="" />
       </div>
     );
