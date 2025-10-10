@@ -44,7 +44,7 @@ const Apps = () => {
           </div>
           {searchedApps.length === 0 ? (
             <div className="flex justify-center items-center w-full mx-auto">
-              <img src="/public/App-Error.png" alt="" />
+              <img src="./public/App-Error.png" alt="" />
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 max-w-screen-2xl w-full px-4 md:px-6 lg:px-8 mx-auto">

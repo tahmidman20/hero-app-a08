@@ -67,7 +67,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center">
-          <img className="h-10 ml-6" src="/public/logo.png" alt="" />
+          <img
+            className="h-10 ml-6"
+            src="https://i.ibb.co.com/6SNWnN1/logo.png"
+            alt=""
+          />
           <Link
             to="/"
             className="font-bold text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"

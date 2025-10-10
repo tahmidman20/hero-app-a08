@@ -16,20 +16,24 @@ const Banner = () => {
         <div className="space-x-3 mt-5">
           <a href="https://play.google.com/store/apps" target="_blank">
             <button className="btn btn-outline font-bold">
-              <img src="/public/Play store.png" alt="" />
+              <img src="https://i.ibb.co.com/N631vYv1/Play-store.png" alt="" />
               Google Play
             </button>
           </a>
           <a href="https://www.apple.com/app-store/" target="_blank">
             <button className="btn btn-outline font-bold">
-              <img src="/public/Apps store.png" alt="" />
+              <img src="https://i.ibb.co.com/nNHCsVWm/Apps-store.png" alt="" />
               App Store
             </button>
           </a>
         </div>
       </div>
       <div className="mt-8">
-        <img className="h-86 mx-auto" src="/public/hero.png" alt="" />
+        <img
+          className="h-86 mx-auto"
+          src="https://i.ibb.co.com/9Hyw3Pxt/hero.png"
+          alt=""
+        />
       </div>
       <div className="py-8 bg-gradient-to-r from-blue-600 to-purple-500 text-center text-white">
         <h1 className="text-3xl font-semibold ">

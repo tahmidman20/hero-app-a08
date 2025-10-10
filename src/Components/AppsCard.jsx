@@ -14,11 +14,19 @@ const AppsCard = ({ app }) => {
           </h2>
           <div className="flex justify-between pt-4">
             <div className="flex bg-gray-200 p-2 rounded-md">
-              <img className="h-5" src="/public/icon-downloads.png" alt="" />
+              <img
+                className="h-5"
+                src="https://i.ibb.co.com/PZdhgvdd/icon-downloads.png"
+                alt=""
+              />
               <p className="text-green-500">{downloads}</p>
             </div>
             <div className="flex bg-orange-100 p-2 rounded-md">
-              <img className="h-5" src="/public/icon-ratings.png" alt="" />
+              <img
+                className="h-5"
+                src="https://i.ibb.co.com/JF8WBnVs/icon-ratings.png"
+                alt=""
+              />
               <p className="text-orange-500">{ratingAvg}</p>
             </div>
           </div>
