@@ -1,38 +1,91 @@
-# React + Vite
+##Live link - https://leafy-sprinkles-5446ef.netlify.app/
 
-## NOTICE
+## Project Overview
 
-# App Name ⬇
+এটি একটি clean, modern, single-page front-end website, যা মূলত UI ডিজাইন ও রেস্পনসিভ লেআউট প্রদর্শনের জন্য তৈরী করা হয়েছে। সাইটে:
 
-Hero — Modern Task & Project Management Web App
+### ⭐ Key Highlights
 
-# Description ⬇
+একটি Hero Section আছে যেখানে মূল টাইটেল + CTA দেওয়া রয়েছে।
 
-Hero is a modern and interactive web application designed to help users manage their projects, tasks, and teams efficiently.
-It allows users to create, track, and analyze tasks through a clean and responsive interface.
-Real-time updates, toast notifications, and data visualization make the user experience smooth and engaging.
+নিচে Features / Services / Information Sections সাজানো — পরিচ্ছন্ন লেআউট ও পর্যাপ্ত স্পেসিং ব্যবহার করা হয়েছে।
 
-# Technologies ⬇
+কালার প্যালেট soft এবং minimal — চোখে আরামদায়ক।
 
-Frontend ➡ React.js (v19), JSX, Vite
-Styling ➡ Tailwind CSS
-Charts ➡ Recharts
-Routing ➡ React Router DOM
-Notifications ➡ React Toastify
-Hosting ➡ Netlify
-Version Control ➡ Git & GitHub
+ডিজাইনটি mobile-friendly এবং Netlify-তে deploy করা।
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🎯 Purpose
 
-Currently, two official plugins are available:
+এটি Portfolio-র জন্য একটি ডেমো Web Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+UI/UX skill showcase
 
-## React Compiler
+HTML/CSS/JS/React যেটা দিয়ে বানানো হয়েছে 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ⚙️ Tech Stack 
 
-## Expanding the ESLint configuration
+HTML / CSS / Tailwind  ব্যবহার করা হয়েছে
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React ও vanilla JS
+
+Deployment → Netlify
+
+## ✅ Main Technologies Used
+1. React.js
+
+সাইটের স্ট্রাকচার ও কম্পোনেন্টগুলো React দিয়ে তৈরি।
+
+2. Tailwind CSS
+
+UI ডিজাইন, spacing, typography, responsive layout সবই Tailwind দিয়ে করা।
+
+3. Netlify
+
+প্রজেক্টটি Netlify-তে হোস্ট করা হয়েছে ।
+
+## ✅ Main Features
+1. Modern Hero Section
+
+বড় শিরোনাম, সাবটেক্সট ও CTA বাটন
+
+Clean & minimal UI design
+
+2. Responsive Layout
+
+Mobile, tablet ও desktop-এ পুরোপুরি রেস্পনসিভ
+
+Tailwind দিয়ে adaptive grid/spacing
+
+3. Service / Content Sections
+
+বিভিন্ন তথ্য বা সার্ভিস আলাদা আলাদা ব্লকে দেখানো
+
+Card-style clean layout
+
+4. Smooth UI Experience
+
+Consistent color palette
+
+Good spacing, balanced typography
+
+5. Fast Loading & SEO-friendly Structure
+
+Lightweight code
+
+Netlify deployment → quick load time
+
+## 🚀 How to Run the Project Locally
+
+## 1 Clone the Repository
+git clone https://github.com/your-username/repo-name.git
+
+## 2 Go to the Project Folder
+cd your-repo-name
+
+## 3 Install Dependencies
+npm install
+
+## 4 Start Development Server
+npm run dev
+
+
